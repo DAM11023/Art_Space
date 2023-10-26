@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Art Space</string>
+    <string name="knight">Knight</string>
+    <string name="hornet">Hornet</string>
+    <string name="zote">Príncipe Gris Zote</string>
+    <string name="tiso">Tiso</string>
+    <string name="quirrel">Quirrel</string>
+    <string name="señor_seta">Señor Seta</string>
+    <string name="next">Siguiente</string>
+    <string name="previous">Anterior</string>
+</resources>
