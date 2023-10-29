@@ -53,7 +53,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun ListadoDeFotos(modifier: Modifier = Modifier) {
     var result by remember{mutableStateOf(1)}
-    var imageResource = when (result){
+    val imageResource = when (result){
         1-> R.drawable.the_knight
         2-> R.drawable.hornet_idle
         3-> R.drawable.zote_idle
@@ -61,7 +61,7 @@ fun ListadoDeFotos(modifier: Modifier = Modifier) {
         5-> R.drawable.quirrel
         else -> R.drawable.mister_mushroom
     }
-    var textResource = when (result){
+    val textResource = when (result){
         1-> stringResource(R.string.knight)
         2-> stringResource(R.string.hornet)
         3-> stringResource(R.string.zote)
@@ -69,15 +69,29 @@ fun ListadoDeFotos(modifier: Modifier = Modifier) {
         5-> stringResource(R.string.quirrel)
         else -> stringResource(R.string.señor_seta)
     }
+    val textResource2 = when (result){
+        1-> stringResource(R.string.knight2)
+        2-> stringResource(R.string.hornet2)
+        3-> stringResource(R.string.zote2)
+        4-> stringResource(R.string.tiso2)
+        5-> stringResource(R.string.quirrel2)
+        else -> stringResource(R.string.señor_seta2)
+    }
     Column(modifier = modifier,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Image(
             painterResource(imageResource),
             contentDescription = "1",
-            modifier = modifier.width(500.dp).height(500.dp).fillMaxSize()
+            modifier = modifier
+                .width(500.dp)
+                .height(500.dp)
+                .fillMaxSize()
         )
         Text(text = textResource)
+        Text(
+            text = textResource2
+        )
         Spacer(modifier = Modifier.height(16.dp))
         Row(){
         Button(onClick = {

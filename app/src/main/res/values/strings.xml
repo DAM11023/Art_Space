@@ -6,6 +6,12 @@
     <string name="tiso">Tiso</string>
     <string name="quirrel">Quirrel</string>
     <string name="señor_seta">Señor Seta</string>
+    <string name="knight2">Personaje principal</string>
+    <string name="hornet2">Npc y boss</string>
+    <string name="zote2">Npc y boss</string>
+    <string name="tiso2">Npc</string>
+    <string name="quirrel2">Npc</string>
+    <string name="señor_seta2">Npc secreto</string>
     <string name="next">Siguiente</string>
     <string name="previous">Anterior</string>
 </resources>
